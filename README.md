@@ -1,14 +1,23 @@
 # LeaBot: Maternal Health Chatbot
 
-This project focuses on developing a healthcare chatbot tailored specifically to maternal health using a pre-trained Transformer model. The chatbot provides an interactive platform where women can ask questions and receive immediate, accurate responses on a variety of maternal health topics. 
+LeaBot is a domain-specific maternal healthcare chatbot project developed using a pre-trained Transformer model. The chatbot provides an interactive platform where women can ask questions and receive immediate, accurate responses on a variety of maternal health topics. 
 
 ## About the Dataset
 
-The dataset used for training was found from the Hugging Face dataset **nyarkssss/maternal_1k**.
+The chatbot is trained using a conversational dataset from Hugging Face:
+**nyarkssss/maternal_1k**.
 
-This dataset aligns with our project domain as it contains conversational pairs around maternal health. It consists of **1,035** conversational pairs, ensuring a diverse range of user intents and queries.
+It consists of **1,035** question-answer conversational pairs on maternal health-related topics. These pairs help the model understand diverse user intents and provide accurate, domain-specific responses.
 
-The dataset covers three key maternal health contexts: **antenatal**(before birth), **postnatal**(immediately after birth), and **postpartum**(after birth). Each conversation example in the dataset includes the following columns:
+The dataset covers three key maternal health contexts:
+
+1. **Antenatal** -  Questions related to pregnancy before childbirth.
+
+2. **Postnatal** -  Questions related to immediate postpartum care.
+
+3. **Postpartum** - Questions concerning long-term recovery after childbirth.
+
+Each entry in the dataset contains the following fields:
 
 **question** – User queries related to maternal health.
 
@@ -18,23 +27,41 @@ The dataset covers three key maternal health contexts: **antenatal**(before birt
 
 **context** – Additional contextual information related to the question.
 
-The dataset is therefore rich and will help our chatbot learn appropriate responses and give accurate responses. 
+This dataset allows the chatbot to learn domain-specific language and give contextually accurate responses to various maternal health queries.
 
 ## Performance metrics
 
-The model build was evaluated using 4 key evaluation metrics: Bleu, F1, Accuracy and loss. While tuning the hyperparameters, the best performing model was chosen to be used to generates responses for the chatbot.
+To evaluate the performance of the chatbot, several key metrics were considered during the model development phase. These metrics are essential for assessing the model's ability to generate meaningful, accurate responses.
 
-Evaluation metrics for the best performing model are: 
+**Evaluation metrics**
 
+- **Loss:** Measures how well the model predicts the target response. Lower loss, better predictions.
 
+- **Accuracy:** Evaluates the percentage of correctly predicted tokens in the reponses.
 
+- **BLEU:** Measures the precision in generating matching reference responses.
 
+- **F1 score:** Harmonic mean of precision and recall, balancing both false positives and false negatives.
 
+- **Perplexity:** A measure of how well the model predicts a sample; lower perplexity means the model is better at predicting the next word.
+
+Performance metrics for the best-performing model are as follows
+
+Loss :
+
+Accuracy: 
+
+Bleu:
+
+F1:
+
+Perplexity: 
 
 ## Steps to run the chatbot
 
 1. **Clone the repository:**
 
+Start by cloning the repository to your local machine.
 On your terminal, run:
 
 ```
@@ -44,6 +71,8 @@ cd maternal_risk_app
 
 2. **Set up a virtual environment:**
 
+Create and activate a virtual environment.
+
 ```
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
@@ -51,23 +80,34 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 3. **Install Dependencies**
 
+Install the necessary dependencies using pip:
+
 `pip install -r requirements.txt`
 
 4. **Start the flask app:**
 
-Run: `python app.py`
+Run the flask app: 
 
-Then navigate to the url provided on your browser.
+`python app.py`
 
-On the browser, there's a chat icon at the bottom right. Click on the icon to navigate to the chatbot's interface. 
+Once the app is running, open your web browser and navigate to the provided local URL (e.g., `http://127.0.0.1:5000`). You should see the homepage of the chatbot.
+
+On the page, a chat icon will appear at the bottom right of the screen. Click the icon to start interacting with LeaBot. 
+
+## Chatbot Usage:
+
+The chatbot's interface will guide users on how to interact, including how to ask questions, restart conversations, or end the chat.
 
 ## Example conversations:
 
+Here are examples of conversational interactions with the chatbot.
 
-
+![image](https://github.com/user-attachments/assets/fe8e611c-bec0-49aa-8296-0f1e9bfdd132)
 
 
 ## Demo video Link
+
+For a walkthrough, check out the demo video showcasing the chatbot in action!
 
 
 
