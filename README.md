@@ -65,8 +65,8 @@ Start by cloning the repository to your local machine.
 On your terminal, run:
 
 ```
-git clone https://github.com/k-ganda/nurture_prediction.git
-cd maternal_risk_app
+git clone https://github.com/k-ganda/Chatbot_ML.git
+cd Chatbot_ML
 ```
 
 2. **Set up a virtual environment:**
@@ -84,7 +84,17 @@ Install the necessary dependencies using pip:
 
 `pip install -r requirements.txt`
 
-4. **Start the flask app:**
+4. **Download Model and tokenizer files**
+
+The model and tokenizer files are in a folder hosted on Google Drive. Download the files to your local machine using this link: 
+
+https://drive.google.com/drive/folders/1CuoY1BId9i9ucxiZnxW48zwfM2ZjAAbs?usp=sharing
+
+Once downloaded, add the folder to the repositories path. Ensure the folder alignment is like this:
+
+
+
+6. **Start the flask app:**
 
 Run the flask app: 
 
@@ -92,9 +102,10 @@ Run the flask app:
 
 Once the app is running, open your web browser and navigate to the provided local URL (e.g., `http://127.0.0.1:5000`). You should see the homepage of the chatbot.
 
-On the page, a chat icon will appear at the bottom right of the screen. Click the icon to start interacting with LeaBot. 
 
-## Chatbot Usage:
+## Interact with the Chatbot:
+
+On the page, a chat icon will appear at the bottom right of the screen. Click the icon to start interacting with LeaBot. 
 
 The chatbot's interface will guide users on how to interact, including how to ask questions, restart conversations, or end the chat.
 
