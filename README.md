@@ -47,15 +47,15 @@ To evaluate the performance of the chatbot, several key metrics were considered 
 
 Performance metrics for the best-performing model are as follows
 
-Loss :
+**Loss:** 0.366
 
-Accuracy: 
+**Accuracy:** 92.10%
 
-Bleu:
+**Bleu score:** 0.144
 
-F1:
+**F1 score:** 0.921
 
-Perplexity: 
+**Perplexity:** 0.392 
 
 ## Steps to run the chatbot
 
@@ -94,23 +94,29 @@ Once downloaded, add the folder to the repositories path. Ensure the folder alig
 
 Chatbot_ML/
 │
+
 ├── notebook/                             # Folder containing notebook
 │   └── MaternalHealthChatbot (1).ipynb   # Jupyter notebook file
 │
+
 ├── static/                               # Folder for static files (CSS, JS)
 │   ├── css/                              # CSS folder
 │   │   └── style.css                     # CSS file for styling
 │   └── js/                               # JS folder
 │       └── script.js                     # JavaScript file for functionality
 │
+
 ├── templates/                            # Folder for HTML templates
 │   └── index.html                        # HTML file for the chatbot interface
 │
+
 ├── **t5_maternal_bot1/**                     # Folder containing model files (to be downloaded from Google Drive)
 │   └── (model files e.g model.safetensors, tokenizer
 │
+
 ├── README.md                             # Project documentation
 │
+
 └── app.py                                # Main Flask application file
 
 
