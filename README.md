@@ -92,6 +92,28 @@ https://drive.google.com/drive/folders/1CuoY1BId9i9ucxiZnxW48zwfM2ZjAAbs?usp=sha
 
 Once downloaded, add the folder to the repositories path. Ensure the folder alignment is like this:
 
+Chatbot_ML/
+│
+├── notebook/                             # Folder containing notebook
+│   └── MaternalHealthChatbot (1).ipynb   # Jupyter notebook file
+│
+├── static/                               # Folder for static files (CSS, JS)
+│   ├── css/                              # CSS folder
+│   │   └── style.css                     # CSS file for styling
+│   └── js/                               # JS folder
+│       └── script.js                     # JavaScript file for functionality
+│
+├── templates/                            # Folder for HTML templates
+│   └── index.html                        # HTML file for the chatbot interface
+│
+├── **t5_maternal_bot1/**                     # Folder containing model files (to be downloaded from Google Drive)
+│   └── (model files e.g model.safetensors, tokenizer
+│
+├── README.md                             # Project documentation
+│
+└── app.py                                # Main Flask application file
+
+
 
 
 6. **Start the flask app:**
