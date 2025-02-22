@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chatbot</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/style.css') }}" />
+	</head>
+	<body>
+		<!-- Floating Chat Icon -->
+		<div id="chat-icon">💬</div>
+
+		<!-- Chat Window -->
+		<div id="chat-container">
+			<div id="chat-header">
+				<span>LeaBot - Your Maternal Health Assistant</span>
+				<p>Ask us about anything maternal!🙂</p>
+				<!--<button id="close-chat" onclick="toggleChat()">✖</button>!-->
+			</div>
+			<div id="chat-body">
+				<div class="chat-message bot">
+					<strong>LeaBot:</strong> Hello! 👋 I'm here to help with your maternal
+					health questions. To get started, simply type your message in the chat
+					space below. <br /><br />
+					<strong>How to use:</strong>
+					<ul>
+						<li>
+							<strong>Start a conversation:</strong> Just type your question hit
+							send and I'll assist you!
+						</li>
+						<li>
+							<strong>End the conversation:</strong> Type and send
+							<em>"bye"</em>, or <em>"quit"</em> to end our chat.
+						</li>
+						<li>
+							<strong>Restart the conversation:</strong> Type and send
+							<em>"start over"</em> or <em>"new conversation"</em> to begin
+							again.
+						</li>
+					</ul>
+					I look forward to helping you! 😊
+				</div>
+			</div>
+			<div id="chat-footer">
+				<textarea
+					id="user-input"
+					placeholder="Type your maternal health question here..."></textarea>
+				<button id="sendBtn">Send</button>
+			</div>
+			<!----Loading spinner-->
+			<div id="loading-indicator" class="loading-spinner" style="display: none">
+				<span>🤖 LeaBot is thinking...</span>
+			</div>
+		</div>
+
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	</body>
+</html>
