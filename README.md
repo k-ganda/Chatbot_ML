@@ -138,9 +138,11 @@ Here are examples of conversational interactions with the chatbot.
 ![image](https://github.com/user-attachments/assets/fe8e611c-bec0-49aa-8296-0f1e9bfdd132)
 
 
-## Demo video Link
+## Demo Video Link
 
-For a walkthrough, check out the demo video showcasing the chatbot in action!
+Check out the demo video showcasing the chatbot in action!
+
+https://www.youtube.com/watch?v=mC_h_XpMEDA 
 
 
 
