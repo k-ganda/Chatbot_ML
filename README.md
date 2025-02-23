@@ -136,6 +136,7 @@ The chatbot's interface will guide users on how to interact, including how to as
 Here are examples of conversational interactions with the chatbot.
 
 ![image](https://github.com/user-attachments/assets/fe8e611c-bec0-49aa-8296-0f1e9bfdd132)
+https://github.com/user-attachments/assets/a59fa433-7aa9-4849-8baf-816b508b4926
 
 
 ## Demo Video Link
