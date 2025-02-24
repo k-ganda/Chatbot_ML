@@ -25,7 +25,9 @@ def generate_response(question):
     # Allow only maternal health-related questions
     maternal_keywords = ["pregnancy", "baby", "birth", "mother", "preterm",
                          "breast", "miscarriage", "pregnant", "fertility", 'immunization',
-                         'caesarian', 'delivery',  'parents', 'C-section',
+                         'caesarian', 'delivery',  'parents', 'C-section', 'preeclampsia',
+                         'fertile', 'abortion', 'malnourished', 'ovulation', 'babies',
+                         'menstrual cycle', 'menstruation', 'stillbirth', 'ultrasound',
                          "antenatal", "postnatal", "doctor", "nurse", "babycare",
                          "labor", "postpartum", "maternal", "neonatal"]
     
