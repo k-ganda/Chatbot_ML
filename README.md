@@ -131,6 +131,8 @@ On the page, a chat icon will appear at the bottom right of the screen. Click th
 
 The chatbot's interface will guide users on how to interact, including how to ask questions, restart conversations, or end the chat.
 
+To know what type of questions to ask, you can go through the dataset from Hugging Face and pick any of the questions to ask, you can also refine them.
+
 ## Example conversations:
 
 Here are examples of conversational interactions with the chatbot.
